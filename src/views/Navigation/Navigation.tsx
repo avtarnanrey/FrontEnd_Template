@@ -1,50 +1,42 @@
 import * as React from 'react';
-import { Nav } from 'office-ui-fabric-react/lib/Nav';
-import { Icon } from 'office-ui-fabric-react/lib/Icon';
-import { Link } from "react-router-dom";
+import { Link, withRouter, RouteComponentProps } from "react-router-dom";
+import { connect } from "react-redux";
 
-const AppDefinition = {
-    pages: [
-        {
-            links: [
-                {
-                    key: 'Home',
-                    name: 'Home',
-                    url: '/'
-                }
-            ]
-        },
-        {
-            links: [
-                {
-                    key: 'listAds',
-                    name: 'List Ads',
-                    url: '/listAds'
-                },
-                {
-                    key: 'addNew',
-                    name: 'Add New',
-                    url: '/singleAd'
-                }
-            ],
-            name: 'Manage Ads'
-        }
-    ]
-};
+interface NavigationProps {
 
-export default class Navigation extends React.Component<any, any> {
-    public render(): JSX.Element {
-        return <Nav className="ms-bgColor-neutralLight ms-Grid-row fullHeight" groups={AppDefinition.pages} linkAs={this._onRenderLink} expandButtonAriaLabel={'Expand or collapse'} />;
-    }
-
-    private _onRenderLink = (link: any): JSX.Element | null => {
-        return (
-            <Link className={link.className} style={{ color: 'inherit', boxSizing: 'border-box' }} to={link.href}>
-                <span key={1} className="Nav-linkText">
-                    {!!link.iconProps && <Icon style={{ margin: '0 4px' }} {...link.iconProps} />}
-                    {link.title}
-                </span>
-            </Link>
-        );
-    };
 }
+
+interface DispatchProps {
+
+}
+
+interface DispatchProps {
+
+}
+
+class Navigation extends React.Component<NavigationProps & DispatchProps> {
+    render() {
+        return (
+            <>
+                <Link to="/">
+                    <span key={1} className="Nav-linkText">
+                        Home
+                    </span>
+                </Link>
+                <Link to="/login">
+                    <span key={1} className="Nav-linkText">
+                        Login
+                    </span>
+                </Link>
+            </>
+        );
+    }
+}
+
+export default withRouter(connect<NavigationProps, DispatchProps, RouteComponentProps>(
+    // Map state to props
+    ({ }) => ({}),
+    (dispatch) => ({
+
+    })
+)(Navigation as any));

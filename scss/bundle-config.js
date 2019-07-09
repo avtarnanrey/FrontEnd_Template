@@ -7,7 +7,7 @@ if (!fs.existsSync('./dist/css')) {
 }
 
 sass.render({
-    file: './scss/connect-bundle.scss',
+    file: './scss/bundle.scss',
     //includePaths: ['./scss/includes'],
     outputStyle: 'compressed',
 }, function (error, result) {
@@ -19,7 +19,7 @@ sass.render({
     } else {
         console.log(result.status);
         fs.writeFileSync(
-            './dist/css/connect-bundle.css',
+            './dist/css/bundle.css',
             result.css.toString()
         );
     }
