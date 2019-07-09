@@ -1,0 +1,54 @@
+$media-all: "all";
+$media-print: "print";
+
+// Extra large devices (large desktops, 1200px and up)
+$media-desktop: "screen and (min-width: 992px) and (max-width: 1199.98px)";
+// Large devices (desktops, 992px and up)
+$media-large-desktop: "screen and (min-width: 1200px)";
+// Medium devices (tablets, 768px and up)
+$media-tablet: "screen (min-width: 768px) and (max-width: 991.98px)";
+// Small devices (landscape phones, 576px and up)
+$media-mobile: "screen (min-width: 576px) and (max-width: 767.98px)";
+// Extra small devices (portrait phones, less than 576px)
+$media-small-mobile: "screen (max-width: 575.98px)";
+
+
+// Paddings
+
+$sizes: 5, 10, 15, 20, 25, 30;
+
+@each $i in $sizes {
+    .pad-#{$i} {
+        padding: #{$i}px;
+    }
+    .pad-#{$i}-top {
+        padding-top: #{$i}px;
+    }
+    .pad-#{$i}-right {
+        padding-right: #{$i}px;
+    }
+    .pad-#{$i}-bottom {
+        padding-bottom: #{$i}px;
+    }
+    .pad-#{$i}-left {
+        padding-left: #{$i}px;
+    }
+    .margin-#{$i} {
+        margin: #{$i}px;
+    }
+    .margin-#{$i}-top {
+        margin-top: #{$i}px;
+    }
+    .margin-#{$i}-right {
+        margin-right: #{$i}px;
+    }
+    .margin-#{$i}-bottom {
+        margin-bottom: #{$i}px;
+    }
+    .margin-#{$i}-left {
+        margin-left: #{$i}px;
+    }
+    .spacer#{$i}{
+        height: #{$i}px;
+    }
+} 

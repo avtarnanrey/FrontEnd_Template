@@ -1,0 +1,120 @@
+{
+  "rules": {
+    "class-name": true,
+    "comment-format": [
+      true,
+      "check-space"
+    ],
+    "indent": [
+      true,
+      "spaces",
+      2
+    ],
+    "no-duplicate-variable": true,
+    "no-eval": true,
+    "no-internal-module": true,
+    "no-trailing-whitespace": true,
+    "no-unsafe-finally": true,
+    "no-var-keyword": true,
+    "no-console": [
+      true,
+      "trace",
+      "debug",
+      "info",
+      "log",
+      "warn",
+      "error"
+    ],
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "quotemark": [
+      true,
+      "double"
+    ],
+    "semicolon": [
+      true,
+      "always"
+    ],
+    "triple-equals": [
+      true,
+      "allow-null-check"
+    ],
+    "typedef-whitespace": [
+      true,
+      {
+        "call-signature": "nospace",
+        "index-signature": "nospace",
+        "parameter": "nospace",
+        "property-declaration": "nospace",
+        "variable-declaration": "nospace"
+      }
+    ],
+    "variable-name": [
+      true,
+      "ban-keywords"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-separator",
+      "check-type"
+    ],
+    "no-duplicate-imports": true,
+    "no-consecutive-blank-lines": [
+      true,
+      2
+    ],
+    "no-irregular-whitespace": true,
+    "no-duplicate-super": true,
+    "no-switch-case-fall-through": true,
+    "no-reference": true,
+    "no-default-export": true,
+    "no-debugger": true,
+    "no-arg": true,
+    "ban-comma-operator": true,
+    "no-duplicate-switch-case": true,
+    "no-return-await": true,
+    "arrow-return-shorthand": true,
+    "object-literal-key-quotes": [
+      true,
+      "as-needed"
+    ],
+    "object-literal-shorthand": true,
+    "prefer-object-spread": true,
+    "no-namespace": true,
+    "no-import-side-effect": true,
+    "no-parameter-reassignment": true,
+    "no-var-requires": true,
+    "forin": true,
+    "label-position": true,
+    "no-construct": true,
+    "no-invalid-template-strings": true,
+    "no-misused-new": true,
+    "no-this-assignment": true,
+    "no-sparse-arrays": true,
+    "no-unused-expression": [
+      true,
+      "allow-fast-null-checks"
+    ],
+    "switch-default": true,
+    "use-isnan": true,
+    "no-require-imports": true,
+    "align": true,
+    "encoding": true,
+    "interface-over-type-literal": true,
+    "space-within-parens": {
+      "options": [
+        0
+      ]
+    },
+    "eofline": true,
+    "no-unnecessary-callback-wrapper": true,
+    "no-conditional-assignment": true,
+    "prefer-const": true
+  }
+}

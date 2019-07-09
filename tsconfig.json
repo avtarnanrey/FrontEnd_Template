@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "target": "es5",
+        "module": "es6",
+        "moduleResolution": "node",
+        "lib": [
+            "dom",
+            "es6"
+        ],
+        "alwaysStrict": true,
+        "disableSizeLimit": true,
+        "downlevelIteration": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "removeComments": true,
+        "forceConsistentCasingInFileNames": true,
+        "noUnusedLocals": true,
+        "pretty": true,
+        "strictNullChecks": true,
+        "noImplicitAny": true,
+        "noImplicitReturns": true,
+        "jsx": "react",
+        "importHelpers": true,
+        "types": [
+            "node"
+        ]
+    },
+    "include": [
+        "./src/**/*"
+    ]
+}

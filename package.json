@@ -1,0 +1,45 @@
+{
+  "name": "FrontEnd_Template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack --config webpack.config.js --mode development -w",
+    "build:prod": "webpack --config webpack.config.js --mode production",
+    "build:css": "node ./scss/bundle-config.js",
+    "start:dev": "webpack-dev-server --mode development --config webpack.config.js --open --hot --history-api-fallback"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avtarnanrey/FrontEnd_Template"
+  },
+  "author": "Realty Media Solutions",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/avtarnanrey/FrontEnd_Template/issues"
+  },
+  "homepage": "https://github.com/avtarnanrey/FrontEnd_Template#readme",
+  "devDependencies": {
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "@types/react-redux": "*",
+    "@types/react-router-dom": "*",
+    "@types/redux-actions": "*",
+    "awesome-typescript-loader": "*",
+    "html-webpack-plugin": "*",
+    "node-sass": "*",
+    "source-map-loader": "*",
+    "typescript": "*",
+    "webpack": "*",
+    "webpack-cli": "*",
+    "webpack-dev-server": "*"
+  },
+  "dependencies": {
+    "react": "*",
+    "react-dom": "*",
+    "react-redux": "*",
+    "react-router-dom": "*",
+    "redux": "*",
+    "redux-actions": "*"
+  }
+}
