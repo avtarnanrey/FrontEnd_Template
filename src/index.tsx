@@ -6,9 +6,6 @@ import store from "./store"
 import { App } from "./App";
 import { setWidgetStatus } from "./store/Actions";
 import { WidgetStatus } from "../modals";
-import { initializeIcons } from '@uifabric/icons';
-
-initializeIcons();
 
 (function () {
     store.dispatch(setWidgetStatus(WidgetStatus.UPDATING));
