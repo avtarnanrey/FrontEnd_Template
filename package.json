@@ -1,5 +1,5 @@
 {
-  "name": "FrontEnd_Template",
+  "name": "ReactStarterApp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avtarnanrey/FrontEnd_Template"
+    "url": "git+https://github.com/avtarnanrey/ReactStarterApp"
   },
-  "author": "Realty Media Solutions",
+  "author": "Avtar Nanrey",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/avtarnanrey/FrontEnd_Template/issues"
+    "url": "https://github.com/avtarnanrey/ReactStarterApp/issues"
   },
-  "homepage": "https://github.com/avtarnanrey/FrontEnd_Template#readme",
+  "homepage": "https://github.com/avtarnanrey/ReactStarterApp#readme",
   "devDependencies": {
     "@types/react": "*",
     "@types/react-dom": "*",
