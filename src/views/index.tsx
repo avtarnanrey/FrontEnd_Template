@@ -8,7 +8,7 @@ import ScrollToTop from "./Sections/ScrollToTop";
 import Main from "./Sections/Main";
 import Login from "./Login";
 import Navigation from "./Navigation";
-import TopBar from "./Header/TopBar";
+import TopBar from "./Header/HeaderTop";
 import { Footer } from "./Footer";
 
 interface ComponenetProps {
