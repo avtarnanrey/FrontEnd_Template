@@ -2,7 +2,7 @@ import * as React from "react";
 import { connect } from "react-redux";
 import { BrowserRouter } from 'react-router-dom'
 
-import { AppProps, WidgetStatus, StoreState } from "../modals"
+import { AppProps, WidgetStatus, StoreState } from "../models"
 
 import Main from "./views";
 

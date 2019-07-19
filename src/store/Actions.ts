@@ -1,5 +1,6 @@
 import { createAction } from "redux-actions";
 
-export const setWidgetStatus = createAction<number>("SET_WIDGET_STATUS") as (status: number) => ReduxActions.Action<number>;
-// export const increment = createAction<number>("INCREMENT") as (count: number) => ReduxActions.Action<number>;
-// export const decrement = createAction<number>("DECREMENT") as (count: number) => ReduxActions.Action<number>;
+export const setWidgetStatus = createAction<any>("SET_WIDGET_STATUS") as (status: any) => ReduxActions.Action<any>;
+export const getData = createAction<any>("GET_DATA") as (payload: any) => ReduxActions.Action<any>;
+export const setData = createAction<any>("SET_DATA") as (payload: any) => ReduxActions.Action<any>;
+export const errorOccured = createAction<any>("ERROR_OCCURED") as (payload: any) => ReduxActions.Action<any>;

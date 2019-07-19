@@ -1,31 +1,23 @@
-import { Action, handleActions } from 'redux-actions';
-import { StoreUtils } from "../utils/storeUtils";
 import { combineReducers } from "redux";
+import { Action, handleActions } from "redux-actions";
+
+import { StoreUtils } from "../utils/storeUtils";
 
 const { computedActionToPropertyName } = StoreUtils;
 
 import * as actions from "./Actions";
-import { WidgetStatus } from '../../modals';
+import { WidgetStatus } from "../../models";
 
 const {
     setWidgetStatus,
-    // increment,
-    // decrement
+    setData
 } = computedActionToPropertyName(actions);
-
-// const incrementDecrement = handleActions<any>(
-//     {
-//         [increment]: (state, action) => ({
-//             counter: state.counter + action.payload
-//         }),
-
-//         [decrement]: (state, action) => ({
-//             counter: state.counter - action.payload
-//         })
-//     }, { counter: 0 });
 
 export default combineReducers({
     widgetStatus: handleActions<any>({
         [setWidgetStatus]: (state, action: Action<any>) => action.payload
-    }, WidgetStatus.UPDATING)
-});
+    }, WidgetStatus.UPDATING),
+    data: handleActions<any>({
+        [setData]: (state, action: Action<any>) => action.payload
+    }, null)
+})

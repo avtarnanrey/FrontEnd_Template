@@ -1,7 +1,7 @@
 import * as React from "react";
 import { connect } from "react-redux";
 import { Switch, Route, withRouter } from "react-router-dom";
-import { WidgetStatus, StoreState } from "../../modals";
+import { WidgetStatus, StoreState } from "../../models";
 
 import { setWidgetStatus } from "../store/Actions";
 import ScrollToTop from "./Sections/ScrollToTop";
