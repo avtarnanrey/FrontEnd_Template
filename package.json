@@ -1,5 +1,5 @@
 {
-  "name": "ReactStarterApp",
+  "name": "react-starter-app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/avtarnanrey/ReactStarterApp#readme",
   "devDependencies": {
+    "@types/node": "*",
     "@types/react": "*",
     "@types/react-dom": "*",
     "@types/react-redux": "*",
@@ -40,6 +41,8 @@
     "react-redux": "*",
     "react-router-dom": "*",
     "redux": "*",
-    "redux-actions": "*"
+    "redux-actions": "*",
+    "redux-observable": "*",
+    "rxjs": "*"
   }
 }
